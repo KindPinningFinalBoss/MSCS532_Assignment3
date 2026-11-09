@@ -1,0 +1,6 @@
+2000 tables, 1000 keys, 1000 slots, keys are all multiples of 1000
+mean comparisons per successful search : 1.479   (standard error 0.022; bound 1 + (n-1)/(2m) = 1.500)
+median table                           : 1.240
+5th / 95th percentile table            : 1.055 / 2.559
+best / worst table                     : 1.000 / 22.499
+tables that cost more than 2x the bound: 64

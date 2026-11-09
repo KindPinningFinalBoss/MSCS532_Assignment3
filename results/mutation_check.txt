@@ -1,0 +1,21 @@
+mutation check: 18 deliberate bugs, python 3.13.9
+[caught]  deterministic pivot is the last element   (FAILED (failures=1))
+[caught]  three-way scan skips re-checking the swapped element   (FAILED (failures=295))
+[caught]  Lomuto loop stops one element early   (FAILED (failures=308))
+[caught]  recurses into the BIGGER side   (FAILED (errors=2))
+[caught]  randomized pivot is always the first element   (FAILED (failures=3))
+[caught]  comparison counter never counts <   (FAILED (failures=3))
+[caught]  hash function always returns slot 0   (FAILED (failures=2))
+[caught]  hash function is plain k mod m (not universal)   (FAILED (failures=1))
+[caught]  delete forgets to lower the size   (FAILED (failures=4))
+[caught]  table never grows   (FAILED (failures=4))
+[caught]  table grows by one slot instead of doubling   (FAILED (failures=5))
+[caught]  inserting an existing key does not replace its value   (FAILED (failures=1))
+[caught]  rebuild never counts moved items   (FAILED (failures=1))
+[caught]  rebuild reuses a fixed seed instead of the table's rng   (FAILED (failures=1))
+[caught]  shrink guard dropped (rebuilds at the minimum size)   (FAILED (failures=1))
+[caught]  table never shrinks   (FAILED (failures=2))
+[caught]  constructor allows min_load_factor up to max_load_factor   (FAILED (failures=1))
+[caught]  default min_load_factor is a fixed 0.25   (FAILED (failures=1))
+
+18 of 18 caught.
